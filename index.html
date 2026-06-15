@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TEME 2027 | Pré-venda — Garanta sua vaga antes do lançamento</title>
+<meta name="description" content="O preparatório nº 1 em Medicina de Emergência abre pré-venda exclusiva para o TEME 2027. Seja o primeiro a garantir sua vaga com condições especiais." />
+<meta name="theme-color" content="#040405" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23040405'/%3E%3Cpath d='M3 17h5l2-7 3 13 3-9 2 3h8' fill='none' stroke='%23F51627' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --black:#040405;
+  --black2:#0a0a0c;
+  --graphite:#16161a;
+  --red:#F51627;
+  --red-dark:#A90F1B;
+  --red-deep:#6F0710;
+  --red-light:#FF3A49;
+  --white:#F6F6F7;
+  --white-warm:#EAE6E2;
+  --gray-light:#C5C6CC;
+  --gray-mid:#8E9098;
+  --platinum:#D7DBE3;
+  --gold:#E8C9A0;
+
+  --glass-bg:linear-gradient(135deg,rgba(255,255,255,.085),rgba(255,255,255,.022));
+  --glass-bg-red:linear-gradient(135deg,rgba(245,22,39,.14),rgba(245,22,39,.03));
+  --glass-border:rgba(255,255,255,.14);
+  --glass-blur:blur(22px) saturate(150%);
+  --glass-shadow:0 18px 50px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 1px rgba(0,0,0,.35);
+
+  --font-head:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --maxw:1200px;
+  --radius:22px;
+  --glow:0 0 26px rgba(245,22,39,.45);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--font-body);background:var(--black);color:var(--white-warm);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased;min-height:100svh}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+::selection{background:var(--red);color:#fff}
+h1,h2,h3,.eyebrow{font-family:var(--font-head);text-transform:uppercase}
+h1{font-weight:900;font-size:clamp(2.6rem,6vw,5.2rem);line-height:.96;letter-spacing:.5px;color:var(--white)}
+h1 .accent{color:var(--red);text-shadow:0 0 30px rgba(245,22,39,.5)}
+h2{font-weight:800;font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.05;letter-spacing:.5px;color:var(--white)}
+h2 .accent{color:var(--red)}
+p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+.divider{height:1px;border:0;background:linear-gradient(90deg,transparent,rgba(245,22,39,.4),transparent);max-width:var(--maxw);margin:0 auto}
+
+/* ===== GLASS ===== */
+.glass{
+  position:relative;
+  background:var(--glass-bg);
+  backdrop-filter:var(--glass-blur);
+  -webkit-backdrop-filter:var(--glass-blur);
+  border:1px solid var(--glass-border);
+  border-radius:var(--radius);
+  box-shadow:var(--glass-shadow);
+  overflow:hidden;
+}
+.glass::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(135deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,.04) 22%,transparent 50%,transparent 100%);
+  opacity:.8;
+}
+.glass>*{position:relative;z-index:1}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--font-head);font-weight:700;text-transform:uppercase;letter-spacing:.6px;font-size:1.05rem;padding:16px 36px;border-radius:999px;transition:transform .25s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);white-space:nowrap;position:relative;overflow:hidden;cursor:pointer;border:none}
+.btn-primary{color:#fff;background:linear-gradient(100deg,#FF2436 0%,#A90F1B 100%);box-shadow:var(--glow);animation:pulseGlow 2.8s ease-in-out infinite}
+.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
+.btn-primary:hover{background:linear-gradient(100deg,#FF3A49 0%,#F51627 100%);transform:translateY(-2px);box-shadow:0 0 38px rgba(245,22,39,.65)}
+.btn-primary:hover::after{transform:translateX(120%)}
+.btn-block{width:100%}
+.btn-lg{padding:18px 40px;font-size:1.15rem}
+
+/* ===== HEADER ===== */
+.header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s ease,backdrop-filter .35s ease,border-color .35s ease,padding .35s ease;border-bottom:1px solid transparent;padding:18px 0}
+.header.scrolled{background:rgba(4,4,5,.7);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border-bottom-color:rgba(245,22,39,.2);padding:12px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:800;letter-spacing:1.5px;color:var(--white);text-transform:uppercase;font-size:1.5rem}
+.logo-icon{width:36px;height:36px;flex-shrink:0}
+.logo b{color:var(--red);font-weight:900}
+.logo small{display:block;font-family:var(--font-body);font-size:.52rem;letter-spacing:3px;color:var(--gray-mid);text-transform:uppercase;margin-top:-3px;font-weight:500}
+.badge-presale{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-head);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--gold);padding:6px 14px;border-radius:999px;background:linear-gradient(90deg,rgba(232,201,160,.15),rgba(232,201,160,.04));border:1px solid rgba(232,201,160,.35)}
+.badge-presale i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:blink 1.4s ease-in-out infinite;flex-shrink:0}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding-top:100px;padding-bottom:64px;overflow:hidden}
+.hero-fx{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.hero-aurora{position:absolute;inset:-25%;background:radial-gradient(40% 50% at 18% 30%,rgba(245,22,39,.28),transparent 55%),radial-gradient(36% 50% at 85% 75%,rgba(111,7,16,.3),transparent 58%),radial-gradient(50% 40% at 60% 10%,rgba(169,15,27,.18),transparent 60%);animation:auroraPulse 8s ease-in-out infinite}
+.hero-scan{position:absolute;top:0;bottom:0;left:-40%;width:40%;background:linear-gradient(90deg,transparent,rgba(245,22,39,.08),transparent);animation:scanX 7.5s ease-in-out infinite}
+
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 440px;gap:clamp(40px,5vw,72px);align-items:center;width:100%}
+
+/* ===== HERO LEFT ===== */
+.hero-left{display:flex;flex-direction:column;gap:28px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-head);text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:600;color:var(--white);padding:9px 18px;border-radius:999px;background:linear-gradient(90deg,rgba(245,22,39,.18),rgba(245,22,39,.03));border:1px solid rgba(245,22,39,.38);box-shadow:0 0 24px rgba(245,22,39,.14);width:fit-content}
+.kicker i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:blink 1.4s ease-in-out infinite;flex-shrink:0}
+.hero-headline{display:flex;flex-direction:column;gap:6px}
+.hero-headline h1{background:linear-gradient(100deg,#fff 18%,#c7ccd6 42%,#fff 64%,#fff 100%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:sheen 7s linear infinite}
+.hero-headline h1 .accent{-webkit-text-fill-color:var(--red);color:var(--red);text-shadow:0 0 36px rgba(245,22,39,.55)}
+.hero-sub{font-size:clamp(1rem,1.3vw,1.18rem);color:var(--gray-light);max-width:520px;line-height:1.6}
+
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);font-size:.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border-radius:999px;border:1px solid;transition:all .25s var(--ease)}
+.tag-red{color:var(--red-light);border-color:rgba(245,22,39,.38);background:rgba(245,22,39,.07)}
+.tag-red:hover{background:rgba(245,22,39,.15);border-color:rgba(245,22,39,.55)}
+.tag-glass{color:var(--gray-light);border-color:var(--glass-border);background:var(--glass-bg)}
+.tag-gold{color:var(--gold);border-color:rgba(232,201,160,.35);background:rgba(232,201,160,.06)}
+.tag svg{width:13px;height:13px;flex-shrink:0}
+
+.hero-stats{display:flex;gap:clamp(20px,3vw,36px);flex-wrap:wrap}
+.stat{display:flex;flex-direction:column;gap:3px}
+.stat b{font-family:var(--font-head);font-size:clamp(2rem,3.5vw,2.7rem);line-height:1;color:var(--red);font-weight:800;text-shadow:0 0 22px rgba(245,22,39,.3)}
+.stat span{font-size:.78rem;color:var(--gray-light);line-height:1.3;max-width:110px}
+.stat-vr{width:1px;background:rgba(245,22,39,.28);align-self:center;height:42px}
+
+/* ===== HERO RIGHT — FORM ===== */
+.hero-form-wrap{position:relative}
+.form-card{padding:clamp(28px,3.5vw,40px);display:flex;flex-direction:column;gap:22px;border-radius:var(--radius);background:linear-gradient(145deg,rgba(22,22,26,.9),rgba(10,10,12,.95));border:1px solid rgba(245,22,39,.22);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 60px rgba(245,22,39,.07),inset 0 1px 0 rgba(255,255,255,.1)}
+.form-card-head{display:flex;flex-direction:column;gap:8px}
+.form-card-head .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-head);font-size:.72rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;color:var(--red-light)}
+.form-card-head .eyebrow::before{content:"";width:20px;height:2px;background:linear-gradient(90deg,var(--red),transparent);border-radius:2px;flex-shrink:0}
+.form-card-head h3{font-family:var(--font-head);font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--white);line-height:1.1}
+.form-card-head p{font-size:.9rem;color:var(--gray-light);line-height:1.5}
+.form-divider{height:1px;background:linear-gradient(90deg,rgba(245,22,39,.3),rgba(255,255,255,.06),transparent);border:none}
+.form-fields{display:flex;flex-direction:column;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:.78rem;font-weight:600;color:var(--gray-light);letter-spacing:.5px;text-transform:uppercase}
+.field input,.field select{width:100%;padding:13px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;color:var(--white);font-family:var(--font-body);font-size:.95rem;outline:none;transition:border-color .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease);-webkit-appearance:none;appearance:none}
+.field input::placeholder{color:var(--gray-mid)}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238E9098' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;cursor:pointer}
+.field select option{background:var(--graphite);color:var(--white)}
+.field input:focus,.field select:focus{border-color:rgba(245,22,39,.55);box-shadow:0 0 0 3px rgba(245,22,39,.12),0 0 18px rgba(245,22,39,.1);background:rgba(245,22,39,.04)}
+.form-check{display:flex;align-items:flex-start;gap:10px;font-size:.82rem;color:var(--gray-mid);line-height:1.45;cursor:pointer}
+.form-check input[type=checkbox]{width:16px;height:16px;flex-shrink:0;margin-top:2px;accent-color:var(--red);cursor:pointer}
+.form-check a{color:var(--red-light);text-decoration:underline;text-underline-offset:3px}
+.form-submit{display:flex;flex-direction:column;gap:10px}
+.form-submit .btn{padding:17px 28px;font-size:1.05rem;letter-spacing:.8px}
+.form-submit .hint{text-align:center;font-size:.75rem;color:var(--gray-mid);display:flex;align-items:center;justify-content:center;gap:5px}
+.form-submit .hint svg{width:13px;height:13px;color:var(--gray-mid);flex-shrink:0}
+.form-perks{display:flex;flex-direction:column;gap:10px}
+.perk{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--gray-light)}
+.perk svg{width:16px;height:16px;color:var(--red);flex-shrink:0}
+
+/* Decorative glow ring behind form */
+.form-glow{position:absolute;inset:-30px;border-radius:calc(var(--radius) + 30px);background:radial-gradient(ellipse at 50% 50%,rgba(245,22,39,.12),transparent 70%);pointer-events:none;z-index:-1}
+
+/* ===== NOVELTIES SECTION ===== */
+.novelties{padding:clamp(60px,7vw,96px) 0;position:relative}
+.novelties-inner{display:flex;flex-direction:column;gap:clamp(44px,5vw,64px)}
+.novelties-head{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.novelties-head .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-head);font-size:.78rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;color:var(--red-light)}
+.novelties-head .eyebrow::before,.novelties-head .eyebrow::after{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--red),transparent);border-radius:2px;flex-shrink:0}
+.novelties-head .eyebrow::after{background:linear-gradient(270deg,var(--red),transparent)}
+.novelties-head p{color:var(--gray-light);max-width:540px;font-size:1.02rem}
+.novelties-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.novelty-card{padding:28px 26px;display:flex;flex-direction:column;gap:14px;transition:transform .3s var(--ease)}
+.novelty-card:hover{transform:translateY(-4px)}
+.novelty-card .nc-icon{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(245,22,39,.18),rgba(245,22,39,.04));border:1px solid rgba(245,22,39,.28);flex-shrink:0}
+.novelty-card .nc-icon svg{width:22px;height:22px;color:var(--red)}
+.novelty-card h3{font-family:var(--font-head);font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--white);line-height:1.2}
+.novelty-card p{font-size:.88rem;color:var(--gray-light);line-height:1.55}
+.novelty-card .nc-badge{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-head);font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(245,22,39,.1);border:1px solid rgba(245,22,39,.28);color:var(--red-light);width:fit-content}
+.nc-badge.gold{background:rgba(232,201,160,.08);border-color:rgba(232,201,160,.3);color:var(--gold)}
+
+/* ===== URGENCY BAR ===== */
+.urgency{padding:clamp(44px,5vw,64px) 0}
+.urgency-card{padding:clamp(32px,4vw,52px) clamp(28px,4vw,52px);display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;border-radius:var(--radius);background:linear-gradient(110deg,rgba(245,22,39,.12) 0%,rgba(111,7,16,.06) 100%);border:1px solid rgba(245,22,39,.3);box-shadow:0 0 60px rgba(245,22,39,.06)}
+.urgency-text{display:flex;flex-direction:column;gap:8px;max-width:580px}
+.urgency-text h2{font-size:clamp(1.7rem,2.8vw,2.4rem)}
+.urgency-text p{color:var(--gray-light);font-size:.98rem}
+.urgency-cta{flex-shrink:0}
+
+/* ===== FOOTER ===== */
+.footer{border-top:1px solid rgba(245,22,39,.15);padding:clamp(28px,3vw,40px) 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-inner p{font-size:.78rem;color:var(--gray-mid)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:.78rem;color:var(--gray-mid);transition:color .2s ease}
+.footer-links a:hover{color:var(--white)}
+
+/* ===== ANIMATIONS ===== */
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes auroraPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.75;transform:scale(1.04)}}
+@keyframes scanX{0%{left:-40%}60%{left:140%}100%{left:140%}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 26px rgba(245,22,39,.45)}50%{box-shadow:0 0 46px rgba(245,22,39,.7)}}
+@keyframes sheen{0%{background-position:200% center}100%{background-position:-200% center}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:translateX(0)}}
+
+.hero-left{animation:fadeUp .7s var(--ease) both}
+.hero-form-wrap{animation:slideIn .7s .2s var(--ease) both}
+
+/* ===== SUCCESS STATE ===== */
+.success-state{display:none;flex-direction:column;align-items:center;text-align:center;gap:20px;padding:20px 0}
+.success-state .success-icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,rgba(245,22,39,.18),rgba(245,22,39,.04));border:1px solid rgba(245,22,39,.35);display:flex;align-items:center;justify-content:center}
+.success-state .success-icon svg{width:32px;height:32px;color:var(--red)}
+.success-state h3{font-family:var(--font-head);font-size:1.6rem;font-weight:800;text-transform:uppercase;color:var(--white)}
+.success-state p{font-size:.9rem;color:var(--gray-light);max-width:300px}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-form-wrap{max-width:520px;margin:0 auto;width:100%}
+  .hero-sub{max-width:100%}
+  .urgency-card{flex-direction:column;text-align:center}
+  .urgency-cta{width:100%}
+  .urgency-cta .btn{width:100%}
+}
+@media(max-width:500px){
+  .hero-stats{gap:16px}
+  .stat b{font-size:1.7rem}
+  .tags{gap:8px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="logo" href="#">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="9" fill="#040405"/>
+          <path d="M3 19h5l2-8 3.5 15 3.5-10 2 3h9" fill="none" stroke="#F51627" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span>Emergency <b>Talks</b></span>
+          <small>Medicina de Emergência</small>
+        </div>
+      </a>
+      <div class="badge-presale">
+        <i></i>
+        Pré-venda aberta
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-fx">
+    <div class="hero-aurora"></div>
+    <div class="hero-scan"></div>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="kicker">
+          <i></i>
+          TEME 2027 · Pré-venda exclusiva
+        </div>
+
+        <div class="hero-headline">
+          <h1>
+            Seu 2027<br>
+            com título de<br>
+            emergência<br>
+            começa <span class="accent">agora.</span>
+          </h1>
+        </div>
+
+        <p class="hero-sub">
+          Antes do lançamento oficial, você já pode garantir sua vaga no preparatório
+          que mais aprova emergencistas no Brasil — com as melhores condições da história do TEME.
+        </p>
+
+        <div class="tags">
+          <span class="tag tag-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            #TítuloDeEmergência
+          </span>
+          <span class="tag tag-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            #RQE
+          </span>
+          <span class="tag tag-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Condição exclusiva de pré-venda
+          </span>
+          <span class="tag tag-glass">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Acesso antecipado ao conteúdo
+          </span>
+          <span class="tag tag-glass">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Vagas limitadas
+          </span>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <b>8/10</b>
+            <span>aprovados no TEME passaram pelo nosso prep</span>
+          </div>
+          <div class="stat-vr"></div>
+          <div class="stat">
+            <b>+3000</b>
+            <span>alunos preparados nas últimas edições</span>
+          </div>
+          <div class="stat-vr"></div>
+          <div class="stat">
+            <b>100%</b>
+            <span>dos professores são titulados na prova</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — FORM -->
+      <div class="hero-form-wrap">
+        <div class="form-glow"></div>
+        <div class="form-card">
+
+          <div class="form-card-head">
+            <span class="eyebrow">Garanta sua vaga</span>
+            <h3>Quero ser avisado<br>no lançamento</h3>
+            <p>Preencha abaixo e receba em primeira mão a data de abertura, as novidades e a condição especial de pré-venda.</p>
+          </div>
+
+          <hr class="form-divider">
+
+          <!-- FORM -->
+          <form id="captureForm" novalidate>
+            <div class="form-fields">
+              <div class="field">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Dr(a). Seu nome" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com.br" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="whatsapp">WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 9 9999-9999" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="momento">Onde você está na jornada?</label>
+                <select id="momento" name="momento">
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="r1r2">Residente R1 ou R2</option>
+                  <option value="r3">Residente R3 em EM</option>
+                  <option value="formado">Formado, buscando o título</option>
+                  <option value="segunda_tentativa">Segunda tentativa no TEME</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-check" style="margin-top:4px">
+              <input type="checkbox" id="lgpd" name="lgpd" required />
+              <label for="lgpd">Concordo em receber comunicações sobre o TEME 2027 e aceito a <a href="#">Política de Privacidade</a>.</label>
+            </div>
+
+            <div class="form-submit" style="margin-top:8px">
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.1 6.1l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Quero garantir minha vaga
+              </button>
+              <p class="hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Sem spam. Seus dados estão protegidos.
+              </p>
+            </div>
+
+            <hr class="form-divider">
+
+            <div class="form-perks">
+              <div class="perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Acesso antecipado às novidades do preparatório
+              </div>
+              <div class="perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Condição especial exclusiva para pré-inscritos
+              </div>
+              <div class="perk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Prioridade na abertura de vagas
+              </div>
+            </div>
+          </form>
+
+          <!-- SUCCESS STATE -->
+          <div class="success-state" id="successState">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Você está na lista!</h3>
+            <p>Assim que as vagas abrirem, você será o primeiro a saber — com condição exclusiva de pré-inscrito.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== NOVELTIES ===== -->
+<section class="novelties">
+  <div class="container">
+    <div class="novelties-inner">
+      <div class="novelties-head">
+        <span class="eyebrow">O que vem por aí</span>
+        <h2>Novidades do <span class="accent">TEME 2027</span></h2>
+        <p>A edição mais completa de toda a história do preparatório. Veja o que foi reformulado para você conquistar o título.</p>
+      </div>
+
+      <div class="novelties-grid">
+        <!-- Card 1 -->
+        <div class="novelty-card glass">
+          <div class="nc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <span class="nc-badge">Novo</span>
+          <h3>Banco de questões repaginado</h3>
+          <p>Mais de 5.000 questões comentadas, organizadas por tópico e nível de dificuldade, com filtro por edição do TEME.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="novelty-card glass">
+          <div class="nc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <span class="nc-badge">Novo</span>
+          <h3>Aulas ao vivo com titulados</h3>
+          <p>Encontros semanais ao vivo com professores que foram aprovados na mesma prova que você vai fazer. Experiência real.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="novelty-card glass">
+          <div class="nc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="nc-badge gold">Exclusivo</span>
+          <h3>Mentoria individual</h3>
+          <p>Sessões personalizadas para mapear suas lacunas e criar um plano de estudos sob medida para o seu momento.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="novelty-card glass">
+          <div class="nc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <span class="nc-badge">Atualizado</span>
+          <h3>Simulados com gabarito comentado</h3>
+          <p>Simulados no formato exato da prova, liberados nos mesmos intervalos do cronograma oficial do TEME 2027.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="novelty-card glass">
+          <div class="nc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <span class="nc-badge gold">Novo</span>
+          <h3>Pós-graduação integrada</h3>
+          <p>Na modalidade Premium, você acumula créditos de pós-graduação enquanto se prepara — RQE e especialização num único caminho.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="novelty-card glass">
+          <div class="nc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <span class="nc-badge">Novo</span>
+          <h3>Comunidade exclusiva</h3>
+          <p>Acesse uma comunidade ativa de residentes e emergencistas que compartilham dúvidas, casos clínicos e experiências.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== URGENCY ===== -->
+<section class="urgency">
+  <div class="container">
+    <div class="urgency-card">
+      <div class="urgency-text">
+        <h2>Vagas limitadas.<br><span class="accent">Não fique de fora.</span></h2>
+        <p>A pré-inscrição garante condição exclusiva e prioridade no acesso. Quando as vagas abrirem, os pré-inscritos entram primeiro — e pagam menos.</p>
+      </div>
+      <div class="urgency-cta">
+        <a href="#header" class="btn btn-primary btn-lg" onclick="document.getElementById('nome').focus();return false;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Garantir minha vaga agora
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p>© 2025 Emergency Talks. Todos os direitos reservados.</p>
+      <nav class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="https://gtalksmkt.github.io/preparatorio-teme-2027/">Ver landing page completa →</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header scroll effect
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// WhatsApp mask
+const wpp = document.getElementById('whatsapp');
+if (wpp) {
+  wpp.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g, '').slice(0, 11);
+    if (v.length > 2) v = '(' + v.slice(0, 2) + ') ' + v.slice(2);
+    if (v.length > 10) v = v.slice(0, 10) + '-' + v.slice(10);
+    this.value = v;
+  });
+}
+
+// Form submit
+document.getElementById('captureForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const nome = document.getElementById('nome').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const lgpd = document.getElementById('lgpd').checked;
+
+  if (!nome || !email || !lgpd) {
+    // Simple shake + border highlight
+    const missing = [];
+    if (!nome) missing.push(document.getElementById('nome'));
+    if (!email) missing.push(document.getElementById('email'));
+    missing.forEach(el => {
+      el.style.borderColor = 'rgba(245,22,39,.8)';
+      el.style.boxShadow = '0 0 0 3px rgba(245,22,39,.2)';
+      setTimeout(() => { el.style.borderColor = ''; el.style.boxShadow = ''; }, 2000);
+    });
+    if (!lgpd) {
+      document.getElementById('lgpd').style.outline = '2px solid rgba(245,22,39,.8)';
+      setTimeout(() => { document.getElementById('lgpd').style.outline = ''; }, 2000);
+    }
+    return;
+  }
+
+  // Hide form, show success
+  this.style.display = 'none';
+  document.querySelector('.form-card-head').style.display = 'none';
+  document.querySelector('.form-divider').style.display = 'none';
+  const success = document.getElementById('successState');
+  success.style.display = 'flex';
+
+  // TODO: replace with actual form submission (e.g. fetch to webhook/ActiveCampaign/RD Station)
+  console.log('Form data:', { nome, email, whatsapp: document.getElementById('whatsapp').value, momento: document.getElementById('momento').value });
+});
+</script>
+</body>
+</html>
