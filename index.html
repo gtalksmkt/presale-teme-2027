@@ -9,7 +9,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23040405'/%3E%3Cpath d='M3 17h5l2-7 3 13 3-9 2 3h8' fill='none' stroke='%23F51627' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet" />
 <style>
 :root{
   --black:#040405;
@@ -32,8 +32,8 @@
   --glass-blur:blur(22px) saturate(150%);
   --glass-shadow:0 18px 50px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.2),inset 0 -1px 1px rgba(0,0,0,.35);
 
-  --font-head:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;
-  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --font-head:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-body:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   --maxw:1200px;
   --radius:22px;
   --glow:0 0 26px rgba(245,22,39,.45);
@@ -48,10 +48,10 @@ a{color:inherit;text-decoration:none}
 ul{list-style:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
 ::selection{background:var(--red);color:#fff}
-h1,h2,h3,.eyebrow{font-family:var(--font-head);text-transform:uppercase}
-h1{font-weight:900;font-size:clamp(2.6rem,6vw,5.2rem);line-height:.96;letter-spacing:.5px;color:var(--white)}
+h1,h2,h3,.eyebrow{font-family:var(--font-head)}
+h1{font-weight:900;font-size:clamp(2.4rem,5.5vw,4.8rem);line-height:1;letter-spacing:-1px;color:var(--white)}
 h1 .accent{color:var(--red);text-shadow:0 0 30px rgba(245,22,39,.5)}
-h2{font-weight:800;font-size:clamp(1.9rem,3.6vw,3rem);line-height:1.05;letter-spacing:.5px;color:var(--white)}
+h2{font-weight:800;font-size:clamp(1.8rem,3.4vw,2.8rem);line-height:1.08;letter-spacing:-.5px;color:var(--white)}
 h2 .accent{color:var(--red)}
 p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,40px)}
@@ -76,7 +76,7 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 .glass>*{position:relative;z-index:1}
 
 /* ===== BUTTONS ===== */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--font-head);font-weight:700;text-transform:uppercase;letter-spacing:.6px;font-size:1.05rem;padding:16px 36px;border-radius:999px;transition:transform .25s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);white-space:nowrap;position:relative;overflow:hidden;cursor:pointer;border:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-family:var(--font-head);font-weight:700;letter-spacing:-.2px;font-size:1.05rem;padding:16px 36px;border-radius:999px;transition:transform .25s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);white-space:nowrap;position:relative;overflow:hidden;cursor:pointer;border:none}
 .btn-primary{color:#fff;background:linear-gradient(100deg,#FF2436 0%,#A90F1B 100%);box-shadow:var(--glow);animation:pulseGlow 2.8s ease-in-out infinite}
 .btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease)}
 .btn-primary:hover{background:linear-gradient(100deg,#FF3A49 0%,#F51627 100%);transform:translateY(-2px);box-shadow:0 0 38px rgba(245,22,39,.65)}
@@ -88,11 +88,9 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 .header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .35s ease,backdrop-filter .35s ease,border-color .35s ease,padding .35s ease;border-bottom:1px solid transparent;padding:18px 0}
 .header.scrolled{background:rgba(4,4,5,.7);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border-bottom-color:rgba(245,22,39,.2);padding:12px 0}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:800;letter-spacing:1.5px;color:var(--white);text-transform:uppercase;font-size:1.5rem}
-.logo-icon{width:36px;height:36px;flex-shrink:0}
-.logo b{color:var(--red);font-weight:900}
-.logo small{display:block;font-family:var(--font-body);font-size:.52rem;letter-spacing:3px;color:var(--gray-mid);text-transform:uppercase;margin-top:-3px;font-weight:500}
-.badge-presale{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-head);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--gold);padding:6px 14px;border-radius:999px;background:linear-gradient(90deg,rgba(232,201,160,.15),rgba(232,201,160,.04));border:1px solid rgba(232,201,160,.35)}
+.logo{display:flex;align-items:center}
+.logo-img{height:36px;width:auto;display:block;object-fit:contain}
+.badge-presale{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-head);font-size:.72rem;letter-spacing:.5px;font-weight:700;color:var(--gold);padding:6px 14px;border-radius:999px;background:linear-gradient(90deg,rgba(232,201,160,.15),rgba(232,201,160,.04));border:1px solid rgba(232,201,160,.35)}
 .badge-presale i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:blink 1.4s ease-in-out infinite;flex-shrink:0}
 
 /* ===== HERO ===== */
@@ -105,15 +103,15 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 
 /* ===== HERO LEFT ===== */
 .hero-left{display:flex;flex-direction:column;gap:28px}
-.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-head);text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:600;color:var(--white);padding:9px 18px;border-radius:999px;background:linear-gradient(90deg,rgba(245,22,39,.18),rgba(245,22,39,.03));border:1px solid rgba(245,22,39,.38);box-shadow:0 0 24px rgba(245,22,39,.14);width:fit-content}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-head);letter-spacing:.5px;font-size:.82rem;font-weight:600;color:var(--white);padding:9px 18px;border-radius:999px;background:linear-gradient(90deg,rgba(245,22,39,.18),rgba(245,22,39,.03));border:1px solid rgba(245,22,39,.38);box-shadow:0 0 24px rgba(245,22,39,.14);width:fit-content}
 .kicker i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:blink 1.4s ease-in-out infinite;flex-shrink:0}
 .hero-headline{display:flex;flex-direction:column;gap:6px}
-.hero-headline h1{background:linear-gradient(100deg,#fff 18%,#c7ccd6 42%,#fff 64%,#fff 100%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:sheen 7s linear infinite}
+.hero-headline h1{background:linear-gradient(100deg,#fff 18%,#c7ccd6 42%,#fff 64%,#fff 100%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;animation:sheen 7s linear infinite;text-transform:uppercase}
 .hero-headline h1 .accent{-webkit-text-fill-color:var(--red);color:var(--red);text-shadow:0 0 36px rgba(245,22,39,.55)}
 .hero-sub{font-size:clamp(1rem,1.3vw,1.18rem);color:var(--gray-light);max-width:520px;line-height:1.6}
 
 .tags{display:flex;flex-wrap:wrap;gap:10px}
-.tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);font-size:.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;border-radius:999px;border:1px solid;transition:all .25s var(--ease)}
+.tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);font-size:.8rem;font-weight:600;letter-spacing:-.1px;padding:7px 14px;border-radius:999px;border:1px solid;transition:all .25s var(--ease)}
 .tag-red{color:var(--red-light);border-color:rgba(245,22,39,.38);background:rgba(245,22,39,.07)}
 .tag-red:hover{background:rgba(245,22,39,.15);border-color:rgba(245,22,39,.55)}
 .tag-glass{color:var(--gray-light);border-color:var(--glass-border);background:var(--glass-bg)}
@@ -122,7 +120,7 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 
 .hero-stats{display:flex;gap:clamp(20px,3vw,36px);flex-wrap:wrap}
 .stat{display:flex;flex-direction:column;gap:3px}
-.stat b{font-family:var(--font-head);font-size:clamp(2rem,3.5vw,2.7rem);line-height:1;color:var(--red);font-weight:800;text-shadow:0 0 22px rgba(245,22,39,.3)}
+.stat b{font-family:var(--font-head);font-size:clamp(2rem,3.5vw,2.7rem);line-height:1;color:var(--red);font-weight:900;letter-spacing:-1px;text-shadow:0 0 22px rgba(245,22,39,.3)}
 .stat span{font-size:.78rem;color:var(--gray-light);line-height:1.3;max-width:110px}
 .stat-vr{width:1px;background:rgba(245,22,39,.28);align-self:center;height:42px}
 
@@ -130,14 +128,14 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 .hero-form-wrap{position:relative}
 .form-card{padding:clamp(28px,3.5vw,40px);display:flex;flex-direction:column;gap:22px;border-radius:var(--radius);background:linear-gradient(145deg,rgba(22,22,26,.9),rgba(10,10,12,.95));border:1px solid rgba(245,22,39,.22);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 60px rgba(245,22,39,.07),inset 0 1px 0 rgba(255,255,255,.1)}
 .form-card-head{display:flex;flex-direction:column;gap:8px}
-.form-card-head .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-head);font-size:.72rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;color:var(--red-light)}
+.form-card-head .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-head);font-size:.75rem;letter-spacing:.5px;font-weight:600;color:var(--red-light)}
 .form-card-head .eyebrow::before{content:"";width:20px;height:2px;background:linear-gradient(90deg,var(--red),transparent);border-radius:2px;flex-shrink:0}
-.form-card-head h3{font-family:var(--font-head);font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--white);line-height:1.1}
+.form-card-head h3{font-family:var(--font-head);font-size:clamp(1.4rem,2.2vw,1.85rem);font-weight:800;letter-spacing:-.5px;color:var(--white);line-height:1.1}
 .form-card-head p{font-size:.9rem;color:var(--gray-light);line-height:1.5}
 .form-divider{height:1px;background:linear-gradient(90deg,rgba(245,22,39,.3),rgba(255,255,255,.06),transparent);border:none}
 .form-fields{display:flex;flex-direction:column;gap:14px}
 .field{display:flex;flex-direction:column;gap:6px}
-.field label{font-size:.78rem;font-weight:600;color:var(--gray-light);letter-spacing:.5px;text-transform:uppercase}
+.field label{font-size:.78rem;font-weight:600;color:var(--gray-light);letter-spacing:-.1px}
 .field input,.field select{width:100%;padding:13px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;color:var(--white);font-family:var(--font-body);font-size:.95rem;outline:none;transition:border-color .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease);-webkit-appearance:none;appearance:none}
 .field input::placeholder{color:var(--gray-mid)}
 .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238E9098' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;cursor:pointer}
@@ -168,13 +166,13 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 .pdf-bar-text{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
 .pdf-bar-text strong{font-size:.82rem;font-weight:600;color:var(--white);line-height:1.2}
 .pdf-bar-text span{font-size:.73rem;color:var(--gray-mid);line-height:1.35}
-.pdf-bar-badge{flex-shrink:0;font-family:var(--font-head);font-size:.65rem;font-weight:800;letter-spacing:1.5px;color:var(--red-light);padding:4px 9px;border-radius:6px;background:rgba(245,22,39,.1);border:1px solid rgba(245,22,39,.25)}
+.pdf-bar-badge{flex-shrink:0;font-family:var(--font-head);font-size:.7rem;font-weight:800;letter-spacing:.3px;color:var(--red-light);padding:4px 9px;border-radius:6px;background:rgba(245,22,39,.1);border:1px solid rgba(245,22,39,.25)}
 
 /* ===== NOVELTIES SECTION ===== */
 .novelties{padding:clamp(60px,7vw,96px) 0;position:relative}
 .novelties-inner{display:flex;flex-direction:column;gap:clamp(44px,5vw,64px)}
 .novelties-head{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
-.novelties-head .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-head);font-size:.78rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;color:var(--red-light)}
+.novelties-head .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--font-head);font-size:.8rem;letter-spacing:.3px;font-weight:600;color:var(--red-light)}
 .novelties-head .eyebrow::before,.novelties-head .eyebrow::after{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--red),transparent);border-radius:2px;flex-shrink:0}
 .novelties-head .eyebrow::after{background:linear-gradient(270deg,var(--red),transparent)}
 .novelties-head p{color:var(--gray-light);max-width:540px;font-size:1.02rem}
@@ -183,9 +181,9 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 .novelty-card:hover{transform:translateY(-4px)}
 .novelty-card .nc-icon{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(245,22,39,.18),rgba(245,22,39,.04));border:1px solid rgba(245,22,39,.28);flex-shrink:0}
 .novelty-card .nc-icon svg{width:22px;height:22px;color:var(--red)}
-.novelty-card h3{font-family:var(--font-head);font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--white);line-height:1.2}
+.novelty-card h3{font-family:var(--font-head);font-size:1.2rem;font-weight:800;letter-spacing:-.3px;color:var(--white);line-height:1.2}
 .novelty-card p{font-size:.88rem;color:var(--gray-light);line-height:1.55}
-.novelty-card .nc-badge{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-head);font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(245,22,39,.1);border:1px solid rgba(245,22,39,.28);color:var(--red-light);width:fit-content}
+.novelty-card .nc-badge{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-head);font-size:.7rem;font-weight:700;letter-spacing:.2px;padding:4px 10px;border-radius:999px;background:rgba(245,22,39,.1);border:1px solid rgba(245,22,39,.28);color:var(--red-light);width:fit-content}
 .nc-badge.gold{background:rgba(232,201,160,.08);border-color:rgba(232,201,160,.3);color:var(--gold)}
 
 /* ===== URGENCY BAR ===== */
@@ -246,14 +244,7 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
   <div class="container">
     <nav class="nav">
       <a class="logo" href="#">
-        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="36" height="36" rx="9" fill="#040405"/>
-          <path d="M3 19h5l2-8 3.5 15 3.5-10 2 3h9" fill="none" stroke="#F51627" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <div>
-          <span>Emergency <b>Talks</b></span>
-          <small>Medicina de Emergência</small>
-        </div>
+        <img src="emergency logo.png" alt="Emergency Talks" class="logo-img" />
       </a>
       <div class="badge-presale">
         <i></i>
@@ -319,7 +310,7 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
         <div class="hero-stats">
           <div class="stat">
             <b>8/10</b>
-            <span>aprovados no TEME passaram pelo nosso prep</span>
+            <span>aprovados no TEME passaram pelo Talks</span>
           </div>
           <div class="stat-vr"></div>
           <div class="stat">
@@ -528,7 +519,10 @@ p{font-size:clamp(.95rem,1.1vw,1.05rem);color:var(--white-warm)}
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <p>© 2025 Emergency Talks. Todos os direitos reservados.</p>
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="emergency logo.png" alt="Emergency Talks" style="height:24px;opacity:.7" />
+        <p>© 2025 Emergency Talks. Todos os direitos reservados.</p>
+      </div>
       <nav class="footer-links">
         <a href="#">Política de Privacidade</a>
         <a href="#">Termos de Uso</a>
